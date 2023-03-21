@@ -49,19 +49,26 @@
       <!-- the path should end with the name without the extension e.g. if file is trex.fset' the path should end with trex -->
       <a-nft
         type="nft"
-        url="https://crowtec.github.io/test-ar/cibeles/cibeles-image/Palacio_de_Comunicaciones_-_46"
+        url="https://crowtec.github.io/test-ar/cibeles/cibeles-image/cibeles"
         smooth="true"
         smoothCount="10"
         smoothTolerance=".01"
         smoothThreshold="5"
       >
         <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-        <a-entity
+        <!-- <a-entity
           gltf-model="./trex/scene.gltf"
           scale="5 5 5"
           position="150 300 -100"
         >
-        </a-entity>
+        </a-entity> -->
+
+        <a-entity
+        gltf-model="./space/space.gltf"
+        scale="5 5 5"
+        position="150 300 -100"
+      >
+      </a-entity>
       </a-nft>
       <!-- static camera that moves according to the device movemenents -->
       <a-entity camera></a-entity>
